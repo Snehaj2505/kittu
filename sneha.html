@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Birthday Love Letter</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    background:#fff0f5;
+    text-align:center;
+}
+
+/* all pages */
+.page{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+}
+
+.hidden{
+    display:none;
+}
+
+button{
+    padding:14px 35px;
+    border:none;
+    border-radius:30px;
+    background:#ff4d6d;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    margin-top:25px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+button:hover{
+    background:#e63956;
+}
+
+/* PAGE 1 */
+.big-letter{
+    width:380px;
+    height:260px;
+    background:#c70039;
+    border-radius:25px;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:100px;
+    color:white;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+.golden-heart{
+    position:absolute;
+    top:-35px;
+    font-size:65px;
+    color:gold;
+}
+
+/* page 3 options */
+.option-box{
+    display:flex;
+    gap:30px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.option{
+    width:150px;
+    height:150px;
+    background:white;
+    border-radius:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:60px;
+    cursor:pointer;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.option:hover{
+    transform:scale(1.05);
+}
+
+/* common white card */
+.wish{
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    font-size:20px;
+    line-height:1.9;
+    max-width:700px;
+}
+
+/* song */
+.song-section{
+    display:flex;
+    gap:30px;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+}
+
+.song-section img{
+    width:320px;
+    border-radius:20px;
+}
+
+.song-text{
+    max-width:500px;
+    text-align:left;
+    font-size:22px;
+    line-height:1.8;
+}
+
+/* photo gallery */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+    width:90%;
+}
+
+.gallery img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+/* video */
+video{
+    width:80%;
+    border-radius:20px;
+}
+
+/* last card */
+.last-card{
+    width:450px;
+    background:white;
+    padding:50px;
+    border-radius:25px;
+    font-size:40px;
+    color:#ff4d6d;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+</style>
+</head>
+<body>
+
+<!-- PAGE 1 -->
+<div class="page" id="page1">
+
+    <div class="big-letter">
+        <div class="golden-heart">💛❤️💛</div>
+        💌
+    </div>
+
+    <button onclick="nextPage('page1','page2')">
+        Next
+    </button>
+
+</div>
+
+<!-- PAGE 2 -->
+<div class="page hidden" id="page2" style="background:#ffd6e0;">
+
+    <div style="
+        width:95%;
+        display:flex;
+        justify-content:space-between;
+        align-items:flex-start;
+        gap:30px;
+        flex-wrap:wrap;
+    ">
+
+        <!-- LEFT SIDE LETTER -->
+        <div style="
+            flex:1;
+            min-width:450px;
+            background:#f8e7c9;
+            padding:40px;
+            border-radius:20px;
+            box-shadow:0 10px 30px rgba(0,0,0,0.15);
+            border:8px solid #e5c79a;
+            text-align:left;
+        ">
+
+            <h1 style="
+                font-size:60px;
+                color:#c70039;
+                text-align:center;
+                font-family:cursive;
+                line-height:1.2;
+            ">
+                Happy<br>Birthday<br>
+                <span style="
+                    font-size:50px;
+                    color:#3d1f00;
+                    font-family:'Times New Roman';
+                ">
+                    khadus ❤️
+                </span>
+            </h1>
+
+            <br>
+
+            <p style="
+                font-size:28px;
+                line-height:1.8;
+                color:#111;
+            ">
+                I hope your day is filled with happiness,
+                love, and lots of smiles.
+                <br><br>
+
+                Thank you for being a part of my life
+                and making every moment special.
+                <br><br>
+
+                No matter how much you irritate me,
+                you’ll always be my favorite person.
+                <br><br>
+
+                Stay happy, successful,
+                and always keep smiling.
+                <br><br>
+
+                Love you ❤️
+            </p>
+
+        </div>
+
+        <!-- RIGHT SIDE PHOTOS -->
+        <div style="
+            flex:1;
+            min-width:450px;
+            display:grid;
+            grid-template-columns:repeat(3,1fr);
+            gap:15px;
+            align-items:start;
+        ">
+
+            <!-- column 1 -->
+            <div style="display:flex; flex-direction:column; gap:15px;">
+                <img src="2.jpg" style="width:100%; height:250px; object-fit:cover; border-radius:18px; border:4px solid white;">
+                <img src="3.jpg" style="width:100%; height:250px; object-fit:cover; border-radius:18px; border:4px solid white;">
+                <img src="4.jpg" style="width:100%; height:250px; object-fit:cover; border-radius:18px; border:4px solid white;">
+            </div>
+
+            <!-- column 2 -->
+            <div style="display:flex; flex-direction:column; gap:15px;">
+                <img src="5.jpg" style="width:100%; height:300px; object-fit:cover; border-radius:18px; border:4px solid white;">
+                <img src="6.jpg" style="width:100%; height:300px; object-fit:cover; border-radius:18px; border:4px solid white;">
+            </div>
+
+            <!-- column 3 -->
+            <div>
+                <img src="7.jpg" style="width:100%; height:620px; object-fit:cover; border-radius:18px; border:4px solid white;">
+            </div>
+
+        </div>
+
+    </div>
+
+    <button onclick="nextPage('page2','page3')" style="
+        margin-top:30px;
+        padding:16px 50px;
+        font-size:24px;
+        border:none;
+        border-radius:40px;
+        background:#d62828;
+        color:white;
+        cursor:pointer;
+        box-shadow:0 8px 20px rgba(0,0,0,0.2);
+    ">
+        Next →
+    </button>
+
+</div>
+
+<!-- PAGE 3 -->
+<div class="page hidden" id="page3">
+
+    <h1>This is for you ❤️</h1>
+    <br><br>
+
+    <div class="option-box">
+
+        <div class="option" onclick="nextPage('page3','messagePage')">
+            💌
+        </div>
+
+        <div class="option" onclick="nextPage('page3','flowerPage')">
+            💐
+        </div>
+
+        <div class="option" onclick="nextPage('page3','cakePage')">
+            🎂
+        </div>
+
+        <div class="option" onclick="nextPage('page3','songPage')">
+            💿
+        </div>
+
+    </div>
+
+</div>
+
+<!-- SONG PAGE -->
+<div class="page hidden" id="songPage">
+
+    <div class="song-section">
+
+        <img src="20.jpg">
+
+        <div class="song-text">
+            तू इश्क़ है तो मैं बाहों में हूं<br>
+            बाहों में हूं तो पनाहों में हूं<br>
+            काजल हूं तो मैं निगाहों में हूं<br>
+            तू है तो मैं हूं<br><br>
+
+            कसमें वादे क्यों? तू है तो मैं हूं<br>
+            बस मैं तेरा हूं तू है तो मैं हूं<br>
+            सीने पे लिख लूं तू है तो मैं हूं<br>
+            तू है तो मैं हूं ❤️
+        </div>
+
+    </div>
+
+    <button onclick="nextPage('songPage','photoPage')">
+        Next
+    </button>
+
+</div>
+
+<!-- MESSAGE PAGE -->
+<div class="page hidden" id="messagePage">
+
+    <img src="1.jpg" style="width:250px; border-radius:20px; margin-bottom:20px;">
+
+    <div class="wish">
+
+        You are the kind of person who makes everything feel better
+        just by being there ❤️
+        <br><br>
+
+        No matter how many fights, mood swings,
+        or silly arguments we have,
+        my heart still chooses you every single time.
+        <br><br>
+
+        You annoy me, tease me,
+        and act all khadus,
+        but you’re also my comfort,
+        my happiness,
+        and my favorite person.
+        <br><br>
+
+        Being with you feels safe,
+        peaceful, and special.
+        <br><br>
+
+        You mean a lot to me,
+        today and always ❤️
+
+    </div>
+
+    <button onclick="nextPage('messagePage','photoPage')">
+        Next
+    </button>
+
+</div>
+
+<!-- FLOWER PAGE -->
+<div class="page hidden" id="flowerPage">
+
+    <h1>💐 Beautiful Bouquet 💐</h1>
+    <br>
+
+    <div class="wish">
+
+        Giving you flowers because you make my life beautiful 🌷
+        <br><br>
+
+        Pretty flowers for my pretty love 💐
+        <br><br>
+
+        A little bouquet for the boy who owns my heart ❤️
+        <br><br>
+
+        Every flower says “I love you” 💫
+        <br><br>
+
+        My love keeps growing like flowers 🌸
+        <br><br>
+
+        Flowers for my forever favorite person 💖
+
+    </div>
+
+    <button onclick="nextPage('flowerPage','photoPage')">
+        Next
+    </button>
+
+</div>
+
+<!-- CAKE PAGE -->
+<div class="page hidden" id="cakePage">
+
+    <h1>🎂 Beautiful Pink Cake 🎂</h1>
+    <br>
+
+    <img src="cake.jpg" style="width:350px; border-radius:20px;">
+
+    <br>
+
+    <button onclick="alert('Cake Cut Successfully ❤️')">
+        Click
+    </button>
+
+    <button onclick="nextPage('cakePage','photoPage')">
+        Next
+    </button>
+
+</div>
+
+<!-- PHOTO PAGE -->
+<div class="page hidden" id="photoPage">
+
+    <h1>Mine Khadus ❤️</h1>
+    <br><br>
+
+    <div class="gallery">
+
+        <img src="8.jpg">
+        <img src="9.jpg">
+        <img src="10.jpg">
+        <img src="11.jpg">
+
+        <img src="12.jpg">
+        <img src="13.jpg">
+        <img src="14.jpg">
+        <img src="15.jpg">
+
+        <img src="16.jpg">
+        <img src="17.jpg">
+        <img src="18.jpg">
+        <img src="19.jpg">
+
+    </div>
+
+    <button onclick="nextPage('photoPage','videoPage')">
+        Next
+    </button>
+
+</div>
+
+<!-- VIDEO PAGE -->
+<div class="page hidden" id="videoPage">
+
+    <h1>Special Video ❤️</h1>
+    <br><br>
+
+    <video controls>
+        <source src="video.mp4" type="video/mp4">
+    </video>
+
+    <button onclick="nextPage('videoPage','lastPage')">
+        Next
+    </button>
+
+</div>
+
+<!-- LAST PAGE -->
+<div class="page hidden" id="lastPage">
+
+    <div class="last-card">
+        I LOVE YOU ❤️
+    </div>
+
+</div>
+
+<script>
+function nextPage(current, next){
+    document.getElementById(current).classList.add("hidden");
+    document.getElementById(next).classList.remove("hidden");
+}
+</script>
+
+</body>
+</html>
